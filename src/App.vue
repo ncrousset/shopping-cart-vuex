@@ -1,14 +1,17 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <ProductList/>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'App',
-};
+  import ProductList from './components/ProductList'
+  export default {
+    name: 'app',
+    components: {
+      ProductList
+    }
+  };
 </script>
 
 <style>
