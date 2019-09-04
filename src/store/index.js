@@ -3,15 +3,15 @@ import Vue from 'vue'
 
 Vue.use(Vuex)
 
-new Vuex.Store({
+export default new Vuex.Store({
   state: {
     products: []
   },
 
   getters: {
-    productsCount: {
-
-    }
+    // productsCount: {
+    //
+    // }
   },
 
   actions: {
@@ -21,8 +21,8 @@ new Vuex.Store({
   },
 
   mutations: {
-    setProducts() {
-
+    setProducts(state, products) {
+      state.products = products;
     }
   }
 })
